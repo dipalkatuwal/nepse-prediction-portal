@@ -40,9 +40,9 @@ const Login = () => {
     }
   return (
      <>
-        <div className='container'>
+        <div className='container mt-3 '>
         <div className='row justify-content-center'>
-            <div className = 'col-md-6 bg-light-dark p-5 rounded' >
+            <div className = 'col-md-6 bg-dark p-5 rounded' >
                 <h3 className='text-light text-center mb-4'>Login to our Portal</h3>
                 <form onSubmit ={handleLogin}>
                     <div className = 'mb-3'>   
@@ -51,7 +51,7 @@ const Login = () => {
                     
                     <div className='mb-3'>
 
-                    <input type ='password' className='form-control' placeholder='Set password' value ={password}  onChange={(e)=> setPassword(e.target.value)}></input>
+                    <input type ='password' className='form-control' placeholder='Enter password' value ={password}  onChange={(e)=> setPassword(e.target.value)}></input>
                     </div>
                     {error && <div className ='text-danger'>{error}</div>}
                     {loading?(
